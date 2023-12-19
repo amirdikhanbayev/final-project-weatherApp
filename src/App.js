@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Weather from './components/Weather';
 import Home from './components/Home';
 import './App.css';
-import logo from './img/img.png'; // Укажите правильный путь к изображению
-
+import logo from './img/img.png';
 function App() {
     return (
         <Router>
