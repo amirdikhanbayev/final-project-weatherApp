@@ -1,0 +1,102 @@
+.weather-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.weather-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.weather-box.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.weather-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+.weather-button {
+    width: 250px;
+    height: 50px;
+    margin: 15px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
