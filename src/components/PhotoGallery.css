@@ -1,0 +1,61 @@
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-container {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.photo {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.comment-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.comment-input {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.comment {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.delete-button,
+.comment-delete-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
